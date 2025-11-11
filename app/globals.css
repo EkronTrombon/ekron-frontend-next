@@ -1,26 +1,108 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #111111;
+  --foreground: #ffffff;
+  --primary: #f16529;
+  --secondary: #e44d26;
+  --tertiary: #e44d26;
+  --quaternary: #e3cc9b;
+  --quinary: #f9bd15;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-tertiary: var(--tertiary);
+  --color-quaternary: var(--quaternary);
+  --color-quinary: var(--quinary);
+  --font-poppins: var(--font-poppins);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-poppins);
+}
+
+.h1 {
+  @apply flex flex-col md:flex-row justify-between items-center gap-5 font-poppins font-bold text-7xl md:text-[112px] leading-[72px] md:leading-[112px] before:content-['xabier'] before:text-white before:font-poppins before:font-bold before:text-lg after:content-['remirez'] after:text-white after:font-poppins after:font-bold after:text-lg;
+}
+
+.h2 {
+  @apply font-poppins text-4xl md:text-6xl font-bold leading-10 md:leading-[60px];
+}
+
+.h3 {
+  @apply font-poppins text-2xl md:text-3xl font-bold leading-9;
+}
+
+.main-menu {
+  @apply flex justify-between items-center gap-10;
+}
+
+.main-menu li {
+  @apply font-bold text-base leading-6 hover:cursor-pointer hover:text-primary transition-colors duration-300;
+}
+
+.avatar-menu {
+  @apply flex flex-col items-center justify-between gap-5;
+}
+
+.avatar-menu li {
+  @apply relative font-bold text-white text-5xl md:text-6xl hover:text-black transition-colors duration-300 after:absolute after:content-[''] after:left-0 after:bottom-0 after:w-full after:h-[3px] after:bg-black after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100;
+}
+
+.button {
+  @apply relative z-1 w-full md:w-fit flex items-center justify-center py-4 px-10 rounded-full font-poppins font-bold text-base border overflow-hidden transition-colors duration-500 ease-in-out hover:cursor-pointer;
+}
+
+.button-primary {
+  @apply bg-primary text-white border-none before:absolute before:content-[''] before:top-0 before:left-0 before:bottom-0 before:right-0 before:z-[-1] before:bg-black before:opacity-50 before:rounded-full before:scale-0 before:transition-transform before:duration-500 before:ease-in-out hover:before:scale-125 focus:before:scale-125;
+}
+
+.button-hollow-black {
+  @apply bg-transparent text-black border-black before:absolute before:content-[''] before:top-0 before:left-0 before:bottom-0 before:right-0 before:z-[-1] before:bg-black before:opacity-50 before:rounded-full before:scale-0 before:transition-transform before:duration-500 before:ease-in-out hover:before:scale-125 focus:before:scale-125;
+}
+
+.button-hollow-white {
+  @apply bg-transparent text-white border-white hover:text-black focus:text-black hover:border-black focus:border-black before:absolute before:content-[''] before:top-0 before:left-0 before:bottom-0 before:right-0 before:z-[-1] before:bg-white before:opacity-50 before:rounded-full before:scale-0 before:transition-transform before:duration-500 before:ease-in-out hover:before:scale-125 focus:before:scale-125;
+}
+
+.social-media {
+  @apply flex justify-between items-center gap-10;
+}
+
+.social-media li {
+  @apply hover:scale-125 hover:transition-transform hover:ease-in-out hover:duration-300;
+}
+
+.footer-email {
+  @apply text-white font-semibold text-3xl md:text-5xl font-poppins hover:text-primary hover:transition-colors hover:ease-in-out hover:duration-300;
+}
+
+.link {
+  @apply relative text-primary font-poppins transition-colors duration-300 after:absolute after:content-[''] after:left-0 after:bottom-0 after:w-full after:h-[2px] translate-x-50 after:scale-x-0 after:transition-transform after:duration-300 hover:after:translate-x-0 hover:after:scale-x-100;
+}
+
+.link--bold {
+  @apply font-bold;
+}
+
+.link--primary {
+  @apply text-primary hover:text-white after:bg-white;
+}
+
+.link--primary-reverse {
+  @apply text-white hover:text-primary after:bg-primary;
+}
+
+.link--white {
+  @apply text-white hover:text-black after:bg-black;
+}
+
+.link--black {
+  @apply text-black hover:text-white after:bg-white;
 }
