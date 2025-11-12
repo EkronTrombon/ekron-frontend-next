@@ -27,6 +27,10 @@ body {
   font-family: var(--font-poppins);
 }
 
+.container {
+  @apply max-w-7xl;
+}
+
 .h1 {
   @apply flex flex-col md:flex-row justify-between items-center gap-5 font-poppins font-bold text-7xl md:text-[112px] leading-[72px] md:leading-[112px] before:content-['xabier'] before:text-white before:font-poppins before:font-bold before:text-lg after:content-['remirez'] after:text-white after:font-poppins after:font-bold after:text-lg;
 }

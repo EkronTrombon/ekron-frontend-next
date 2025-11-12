@@ -10,9 +10,9 @@ export const AvatarMenu = () => {
             <Image src={AvatarRound} width={160} height={160} alt="Ekron Avatar" className="rounded-full hover:scale-125 hover:cursor-pointer hover:transition-transform hover:ease-in-out hover:duration-300" />
             <ul className="avatar-menu">
                 <li><Link href='/'>Home</Link></li>
-                <li>About</li>
-                <li>Projects</li>
-                <li>Contact</li>
+                <li><Link href='/about'>About</Link></li>
+                <li><Link href='/projects'>Projects</Link></li>
+                <li><Link href='/contact'>Contact</Link></li>
             </ul>
         </div>
     </div>
