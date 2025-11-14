@@ -1,6 +1,3 @@
-import Image from "next/image";
-import Shape from '@/app/assets/images/EKR_Homepage_Shape.png';
-
 export const InteriorBanner = ({ title }: { title: string }) => {
   return (
     <section className="relative bg-black">

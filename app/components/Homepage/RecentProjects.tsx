@@ -10,8 +10,6 @@ export const RecentProjects = async () => {
     .order('createdAt', { ascending: false })
     .limit(2);
 
-    console.log(projects);
-
     if (error || !projects) {
         // Handle the error appropriately in a real application
         console.error('Error fetching projects:', error);
