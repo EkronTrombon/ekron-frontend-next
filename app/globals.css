@@ -31,16 +31,24 @@ body {
   @apply max-w-7xl;
 }
 
+h1,
 .h1 {
   @apply flex flex-col md:flex-row justify-between items-center gap-5 font-poppins font-bold text-7xl md:text-[112px] leading-[72px] md:leading-[112px] before:content-['xabier'] before:text-white before:font-poppins before:font-bold before:text-lg after:content-['remirez'] after:text-white after:font-poppins after:font-bold after:text-lg;
 }
 
+h2,
 .h2 {
   @apply font-poppins text-4xl md:text-6xl font-bold leading-10 md:leading-[60px];
 }
 
+h3,
 .h3 {
   @apply font-poppins text-2xl md:text-3xl font-bold leading-9;
+}
+
+h4,
+.h4 {
+  @apply font-poppins text-xl md:text-2xl font-bold leading-8;
 }
 
 .main-menu {
