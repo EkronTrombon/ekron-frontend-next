@@ -22,7 +22,7 @@ export const RecentProjects = async () => {
                 <div className="mt-10 max-w-[720px] mx-auto text-white text-center">Our system is meticulously designed to tackle occasional transaction failures caused by issues such as insufficient funds or temporary glitches.</div>
                 <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-5">
                     {projects.map((project) => (
-                        <Link href={`/projects/${project.id}`} key={project.id} className="relative group">
+                        <Link href={project.url} target="_blank" key={project.id} className="relative group">
                             <Image 
                                 src={project.thumbnail.replace(/\\/g, '/').split('/public')[1]} 
                                 alt={project.name} 

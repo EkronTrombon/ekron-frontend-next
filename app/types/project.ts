@@ -6,4 +6,5 @@ export interface Project {
   thumbnail: string;
   hero: string;
   images: string[];
+  url: string;
 }
