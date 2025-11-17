@@ -7,7 +7,7 @@ import { supabase } from "@/app/lib/supabase";
 import HomeAboutImage from '@/app/assets/images/EKR_Home_About.png';
 
 export default async function ProjectsPage() {
-    const { data: projects, error } = await supabase.from('Projects').select('*').order('createdAt', { ascending: false }).limit(2);
+    const { data: projects, error } = await supabase.from('Projects').select('*').order('createdAt', { ascending: false });
 
     if (error || !projects) {
         // Handle the error appropriately in a real application
