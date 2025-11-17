@@ -2,6 +2,7 @@ import Image from "next/image";
 import Shape from '@/app/assets/images/EKR_Homepage_Shape.png';
 import { Social } from "../components/Social";
 import { InteriorBanner } from "../components/InteriorBanner";
+import { ContactForm } from '../components/ContactForm';
 
 export default function ContactPage() {
     return (
@@ -16,14 +17,11 @@ export default function ContactPage() {
                         </div>
                     </div>
                     <div className="w-full md:w-1/2">
-                        <div className="contact-form">
-                            FORM
-                            {/* <?= do_shortcode('[contact-form-7 id="197eb68" title="Contact Form"]'); ?> */}
-                        </div>
+                        <ContactForm />
                     </div>
-                    <div className="absolute bottom-0 flex justify-center w-full">
-                        <Image className="w-fit object-cover" src={Shape} alt="Background Shape" />
-                    </div>
+                </div>
+                <div className="absolute bottom-0 flex justify-center w-full">
+                    <Image className="w-fit object-cover" src={Shape} alt="Background Shape" priority />
                 </div>
             </div>
         </>

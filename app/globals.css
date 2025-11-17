@@ -110,3 +110,12 @@ body {
 .link--black {
   @apply text-black hover:text-white after:bg-white;
 }
+
+.contact-form {
+  @apply flex flex-col gap-6;
+}
+
+.contact-form input,
+textarea {
+  @apply bg-white text-black;
+}
