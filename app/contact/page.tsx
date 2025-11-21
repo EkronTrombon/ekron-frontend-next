@@ -11,8 +11,8 @@ export default function ContactPage() {
             <div className="relative bg-black pb-16 md:pb-24">
                 <div className="container mx-auto flex flex-col md:flex-row justify-between items-start gap-10 md:gap-[120px]">
                     <div className="w-full md:w-1/2">
-                        <h2 className="h2 text-white">Don't let your vision wait, let's work together!</h2>
-                        <div className="mt-10 w-fit">
+                        <h2 className="h2 text-white text-center md:text-left">Don't let your vision wait, let's work together!</h2>
+                        <div className="mt-5 md:mt-10 w-fit mx-auto md:mx-0">
                             <Social />
                         </div>
                     </div>

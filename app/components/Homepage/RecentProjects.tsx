@@ -16,7 +16,7 @@ export const RecentProjects = async () => {
         return <div>Error loading projects.</div>;
     }
     return (
-        <div className="bg-site-black py-16 md:py-24">
+        <div className="bg-site-black py-5 md:py-10">
             <div className="container mx-auto">
                 <h2 className="h2 text-white text-center">My Recent Projects</h2>
                 <div className="mt-10 max-w-[720px] mx-auto text-white text-center">Our system is meticulously designed to tackle occasional transaction failures caused by issues such as insufficient funds or temporary glitches.</div>

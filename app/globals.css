@@ -28,7 +28,7 @@ body {
 }
 
 .container {
-  @apply max-w-7xl;
+  @apply px-5 md:px-0 w-full md:max-w-7xl;
 }
 
 h1,
@@ -52,7 +52,7 @@ h4,
 }
 
 .main-menu {
-  @apply flex justify-between items-center gap-10;
+  @apply hidden md:flex justify-between items-center gap-10;
 }
 
 .main-menu li {
@@ -96,7 +96,7 @@ h4,
 }
 
 .link {
-  @apply relative text-primary font-poppins transition-colors duration-300 after:absolute after:content-[''] after:left-0 after:bottom-0 after:w-full after:h-[2px] translate-x-50 after:scale-x-0 after:transition-transform after:duration-300 hover:after:translate-x-0 hover:after:scale-x-100;
+  @apply relative text-primary font-poppins transition-colors duration-300 after:absolute after:content-[''] after:left-0 after:bottom-0 after:w-full after:h-[2px] after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100;
 }
 
 .link--bold {

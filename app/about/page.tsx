@@ -7,10 +7,10 @@ export default function AboutPage() {
     return (
         <>
             <InteriorBanner title="about me" />
-            <div className="bg-black py-16 md:py-24">
-                <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-y-16 gap-x-5">
+            <div className="bg-black py-5 md:py-10">
+                <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-y-5 md:gap-y-16 gap-x-5">
                     <h2 className="h2 text-white">Web Development Professional</h2>
-                    <div className="text-xl text-white">
+                    <div className="text-base md:text-xl text-white">
                         <p>I am a highly skilled and results-oriented Front End Developer with over 18 years of experience in developing and maintaining complex software applications. Driven by a passion for the user experience, my journey blends a deep backend foundation with a special focus on modern frontend development.</p>
                         <h4 className="py-2.5 text-primary">The Professional Journey</h4>
                         <p>My career officially began in Pamplona, Spain, after graduating with an Associate degree in computer applications in 2004. Although I started as a Computer Programmer and Maintenance professional, specializing in Java and working with technologies like JavaScript, XSLT, and SQL to develop tools for electronic recipe systems, content management, and insurance data, my interest in frontend work was always present.</p>

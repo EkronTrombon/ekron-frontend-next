@@ -18,11 +18,11 @@ export default async function ProjectsPage() {
     return (
         <>
             <InteriorBanner title="projects" />
-            <div className="bg-quaternary py-16 md:py-24">
+            <div className="bg-quaternary py-5 md:py-10">
                 <div className="container mx-auto">
                     <h2 className="h2 text-black text-center">My Projects</h2>
-                    <div className="mt-10 max-w-[720px] mx-auto text-black text-center">Our system is meticulously designed to tackle occasional transaction failures caused by issues such as insufficient funds or temporary glitches.</div>
-                    <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-5">
+                    <div className="mt-5 md:mt-10 max-w-[720px] mx-auto text-black text-center">Our system is meticulously designed to tackle occasional transaction failures caused by issues such as insufficient funds or temporary glitches.</div>
+                    <div className="mt-5 md:mt-10 grid grid-cols-1 md:grid-cols-2 gap-5">
                         {projects.map((project) => (
                             <Link href={project.url} target="_blank" key={project.id} className="relative group">
                                 <Image 
@@ -44,9 +44,9 @@ export default async function ProjectsPage() {
             <div className="bg-black py-16 md:py-24">
                 <div className="container mx-auto flex flex-col md:flex-row justify-between items-center gap-10 md:gap-[120px]">
                     <div className="w-full md:w-1/2">
-                        <h2 className="h2 text-white">About Me</h2>
-                        <p className="mt-10 text-white text-xl">Building exceptional websites tailored to your vision for 10+ years. Blending creativity and functionality to deliver stunning digital experiences.</p>
-                        <div className="mt-10">
+                        <h2 className="h2 text-white text-center md:text-left">About Me</h2>
+                        <p className="mt-5 md:mt-10 text-white text-base md:text-xl text-center md:text-left">Building exceptional websites tailored to your vision for 10+ years. Blending creativity and functionality to deliver stunning digital experiences.</p>
+                        <div className="mt-5 md:mt-10">
                             <a className="button button-primary " href="/about/">More About Me</a>
                         </div>
                     </div>
