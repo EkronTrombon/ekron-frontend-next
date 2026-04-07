@@ -1,21 +1,13 @@
-export const dynamic = 'force-dynamic';
-
 import Link from "next/link";
 import Image from "next/image";
 
 import { InteriorBanner } from "../components/InteriorBanner";
-import { supabase } from "@/app/lib/supabase";
+import { getProjects } from "@/app/lib/projects";
 
 import HomeAboutImage from '@/app/assets/images/EKR_Home_About.png';
 
-export default async function ProjectsPage() {
-    const { data: projects, error } = await supabase.from('Projects').select('*').order('createdAt', { ascending: false });
-
-    if (error || !projects) {
-        // Handle the error appropriately in a real application
-        console.error('Error fetching projects:', error);
-        return <div>Error loading projects.</div>;
-    }
+export default function ProjectsPage() {
+    const projects = getProjects();
 
     return (
         <>
@@ -27,11 +19,11 @@ export default async function ProjectsPage() {
                     <div className="mt-5 md:mt-10 grid grid-cols-1 md:grid-cols-2 gap-5">
                         {projects.map((project) => (
                             <Link href={project.url} target="_blank" key={project.id} className="relative group">
-                                <Image 
-                                    src={project.thumbnail.replace(/\\/g, '/').split('/public')[1]} 
-                                    alt={project.name} 
-                                    width={580} 
-                                    height={580} 
+                                <Image
+                                    src={project.thumbnail}
+                                    alt={project.name}
+                                    width={580}
+                                    height={580}
                                     className="w-full h-full object-cover rounded-lg"
                                 />
                                 <div className="absolute inset-0 bg-white/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out flex flex-col gap-5 items-center justify-center p-10 rounded-lg">

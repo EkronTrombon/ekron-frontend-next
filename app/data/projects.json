@@ -1,0 +1,42 @@
+[
+  {
+    "id": "ekr-mil",
+    "name": "Milksha - The Original Brown Sugar Boba Milk Tea",
+    "excerpt": "Shopify Development - Milksha - The Original Brown Sugar Boba Milk Tea",
+    "description": "At Milksha, we believe even the smallest moments deserve a little magic. What begins as a simple drink becomes comfort, ritual, or a shift in mood.",
+    "thumbnail": "/projects/EKR_MIL_Thumbnail.png",
+    "url": "https://www.milksha.us/"
+  },
+  {
+    "id": "ekr-tam",
+    "name": "Tampa Bay Titans Basketball",
+    "excerpt": "Shopify Development - Tampa Bay Titans Basketball",
+    "description": "The Tampa Bay Titans are an American professional basketball team competing in The Basketball League (TBL), proudly representing the Tampa Bay area.",
+    "thumbnail": "/projects/EKR_TAM_Thumbnail.png",
+    "url": "https://www.tampabaytitans.com/"
+  },
+  {
+    "id": "ekr-tom",
+    "name": "Tomalas Law Firm",
+    "excerpt": "Wordpress Development - Expert Personal Injury Attorneys in Southern California",
+    "description": "Expert Personal Injury Attorneys in Southern California. We have been successfully representing injury victims since 1984. Call us today!",
+    "thumbnail": "/projects/EKR_TOM_Thumbnail.png",
+    "url": "https://www.tomalaslaw.com/"
+  },
+  {
+    "id": "ekr-jwae",
+    "name": "John Wayne: An American Experience",
+    "excerpt": "Wordpress Development - John Wayne: An American Experience - Fort Worth Museum",
+    "description": "John Wayne: An American Experience is an award-winning museum located in the heart of the Fort Worth Stockyards. Visit us today!",
+    "thumbnail": "/projects/EKR_JWAE_Thumbnail.png",
+    "url": "https://www.johnwayneae.com/"
+  },
+  {
+    "id": "ekr-cbtl",
+    "name": "The Coffee Bean & Tea Leaf®",
+    "excerpt": "Shopify Development - Buy exceptional coffee, tea, powders, equipment and drinkware at The Coffee Bean &amp; Tea Leaf® online store to enjoy our globally sourced products at home.",
+    "description": "Buy exceptional coffee, tea, powders, equipment and drinkware at The Coffee Bean &amp; Tea Leaf® online store to enjoy our globally sourced products at home.",
+    "thumbnail": "/projects/EKR_CBTL_Thumnail.png",
+    "url": "https://www.coffeebean.com/"
+  }
+]

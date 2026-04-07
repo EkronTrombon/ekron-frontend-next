@@ -4,7 +4,5 @@ export interface Project {
   excerpt: string;
   description: string;
   thumbnail: string;
-  hero: string;
-  images: string[];
   url: string;
 }
